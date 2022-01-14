@@ -1,0 +1,37 @@
+Found date: 2021/10/27
+Discovered member(s): Jingwen Liu
+status: doesn't fixed
+Fixed date: 
+Fixed member(s): 
+Problem: server.py can run successfully 
+	(<class 'OSError'>, OSError(10048, '通常每个套接字地址(协议/网络地址/端口)只允许使用一次。', None, 10048, None), <traceback object at 0x000001F9395EF800>)
+Reason: socket of server.py doesn't close sucessfully
+Solution:  input in cmd
+	netstat -aon|findstr "port number"			#port number: 50007-50010
+	taskkill -PID "prcess number" -F 
+
+Found date: 2021/10/15
+Discovered member(s): Jingwen Liu
+status: already fixed
+Fixed date: 2021/10/16
+Fixed member(s): 
+Problem: Transmit file name wrongly. When client upload a file which name include space, the server will only get the name before space. 
+Reason:  name = message.split()[1]
+Solution:  name = message.split()[1]
+	should be changed into
+	name = message.split(" ", 1)[1]
+	
+Found date: 2021/10/27
+Discovered member(s): Jingwen Liu
+status: already fixed
+Fixed date: 
+Fixed member(s): 
+Problem: space and enter can be sent
+Reason: space and enter are not detected to be invaild characters
+Solution: .rstrip() userd after getting text in inputText
+
+
+选择10
+判断10
+计算3
+简答1
