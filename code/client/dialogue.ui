@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WorkTimeChat</class>
+ <widget class="QWidget" name="WorkTimeChat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>734</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>970</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="chatList">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>292</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="onlineUser">
+    <attribute name="title">
+     <string>Online</string>
+    </attribute>
+    <widget class="QListWidget" name="onlineList">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>291</width>
+       <height>651</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">height:60px;</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>Amy</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bill</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cindy</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Juny</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="searchResult">
+    <attribute name="title">
+     <string>Search</string>
+    </attribute>
+    <widget class="QListWidget" name="searchResList">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>292</width>
+       <height>651</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">height:60px;</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPlainTextEdit" name="inputText">
+   <property name="geometry">
+    <rect>
+     <x>291</x>
+     <y>541</y>
+     <width>680</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>等线</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;等线&quot;;</string>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
+   </property>
+   <property name="overwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="backgroundVisible">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="searchLine">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>15</y>
+     <width>221</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>等线</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="searchButton">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>10</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>380</y>
+     <width>251</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+        background: rgba(255, 255, 255, 40%);
+}</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>10</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>70</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>70</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="name">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>5</y>
+     <width>321</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>等线</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Chat</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>58</y>
+     <width>971</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(120, 170, 220);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>0</y>
+     <width>2</width>
+     <height>731</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(120, 170, 220);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>289</x>
+     <y>499</y>
+     <width>681</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="fileButton">
+    <property name="geometry">
+     <rect>
+      <x>625</x>
+      <y>0</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Upload and Download Files</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="picButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>0</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Sticker</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="font_button">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Upload and Download Files</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>2</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;等线&quot;;
+color: rgb(88, 88, 88);</string>
+    </property>
+    <property name="text">
+     <string>A</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="clearMessage">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>700</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendMessage">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>700</y>
+     <width>85</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_showText" native="true">
+   <property name="geometry">
+    <rect>
+     <x>282</x>
+     <y>50</y>
+     <width>695</width>
+     <height>458</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>701</width>
+     <height>471</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="font_widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>400</y>
+     <width>261</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+        background: rgba(255, 255, 255, 40%);
+}
+QSpinBox {
+        border-radius: 4px;
+        height: 24px;
+        min-width: 40px;
+        border: 0px solid rgb(111, 156, 207);
+        background: white;
+}
+QSpinBox:enabled {
+        color: rgb(60, 60, 60);
+}
+QSpinBox:enabled:hover, QSpinBox:enabled:focus {
+        color: rgb(51, 51, 51);
+}
+QSpinBox::up-button {
+        border-left: 1px solid rgb(111, 156, 207);
+        width: 18px;
+        height: 12px;
+        border-top-right-radius: 4px;
+        image: url(:/White/upButton);
+}
+QSpinBox::up-button:!enabled {
+        background: transparent;
+}
+QSpinBox::up-button:enabled:hover {
+        background: rgb(255, 255, 255, 30);
+}
+QSpinBox::down-button {
+        border-left: 1px solid rgb(111, 156, 207);
+        width: 18px;
+        height: 12px;
+        border-bottom-right-radius: 4px;
+        image: url(:/White/downButton);
+}
+QSpinBox::down-button:!enabled {
+        background: transparent;
+}
+QSpinBox::down-button:hover {
+        background: rgb(255, 255, 255, 30);
+}
+QComboBox {
+        height: 25px;
+        border-radius: 4px;
+        border: 0px solid rgb(111, 156, 207);
+        background: white;
+}
+QComboBox:enabled {
+        color: rgb(84, 84, 84);
+}
+QComboBox:enabled:hover, QComboBox:enabled:focus {
+        color: rgb(51, 51, 51);
+}
+QComboBox::drop-down {
+        width: 20px;
+        border: none;
+        background: transparent;
+}
+QComboBox::drop-down:hover {
+        background: rgba(255, 255, 255, 30);
+}
+QComboBox::down-arrow {
+        image: url(:/White/arrowBottom);
+}
+QComboBox::down-arrow:on {
+        /**top: 1px;**/
+}
+QComboBox QAbstractItemView {
+        border: 1px solid rgb(111, 156, 207);
+        background: white;
+        outline: none;
+}
+QComboBox QAbstractItemView::item {
+        height: 25px;
+        color: rgb(73, 73, 73);
+}
+QComboBox QAbstractItemView::item:selected {
+        background: rgb(232, 241, 250);
+        color: rgb(2, 65, 132);
+}</string>
+   </property>
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>261</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+     </property>
+     <property name="labelAlignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="formAlignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="horizontalSpacing">
+      <number>12</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>19</number>
+     </property>
+     <property name="leftMargin">
+      <number>8</number>
+     </property>
+     <property name="rightMargin">
+      <number>7</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="la">
+       <property name="text">
+        <string>Font</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="la2">
+       <property name="text">
+        <string>Font Size</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="font_box"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="font_size"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <zorder>widget_showText</zorder>
+  <zorder>chatList</zorder>
+  <zorder>clearMessage</zorder>
+  <zorder>sendMessage</zorder>
+  <zorder>inputText</zorder>
+  <zorder>searchLine</zorder>
+  <zorder>searchButton</zorder>
+  <zorder>widget</zorder>
+  <zorder>name</zorder>
+  <zorder>frame</zorder>
+  <zorder>line_2</zorder>
+  <zorder>line</zorder>
+  <zorder>font_widget</zorder>
+ </widget>
+ <resources>
+  <include location="Qrc.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>fileButton</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>open_file_win()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>523</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>77</x>
+     <y>529</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>picButton</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>emoji_init()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>834</x>
+     <y>542</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>565</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sendMessage</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>send_msg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>851</x>
+     <y>712</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>544</x>
+     <y>729</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearMessage</sender>
+   <signal>clicked()</signal>
+   <receiver>inputText</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>407</x>
+     <y>718</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>470</x>
+     <y>688</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>searchButton</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>search()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>943</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>push_but10()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>897</x>
+     <y>491</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>683</x>
+     <y>522</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>push_but9()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>822</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>683</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>push_but8()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>757</x>
+     <y>490</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>684</x>
+     <y>491</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>push_but7()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>710</x>
+     <y>471</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>681</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>push_but6()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>705</x>
+     <y>421</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>685</x>
+     <y>461</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>push_but5()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>773</x>
+     <y>430</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>688</x>
+     <y>450</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>push_but4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>827</x>
+     <y>424</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>683</x>
+     <y>444</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>push_but3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>887</x>
+     <y>416</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>683</x>
+     <y>422</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>onlineList</sender>
+   <signal>itemClicked(QListWidgetItem*)</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>text_chat()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>969</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>onlineList</sender>
+   <signal>itemDoubleClicked(QListWidgetItem*)</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>show_info_clg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>149</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>966</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inputText</sender>
+   <signal>textChanged()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>sendPicture()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>383</x>
+     <y>595</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>425</x>
+     <y>545</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>font_button</sender>
+   <signal>clicked()</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>font_change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>329</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>680</x>
+     <y>35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>searchResList</sender>
+   <signal>itemDoubleClicked(QListWidgetItem*)</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>srch_show_info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>243</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>47</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>searchResList</sender>
+   <signal>itemClicked(QListWidgetItem*)</signal>
+   <receiver>WorkTimeChat</receiver>
+   <slot>srch_text_chat()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>send_msg()</slot>
+  <slot>vedio_chat()</slot>
+  <slot>send_emoji()</slot>
+  <slot>show_info_clg()</slot>
+  <slot>open_file_win()</slot>
+  <slot>search()</slot>
+  <slot>text_chat()</slot>
+  <slot>show_info_grp()</slot>
+  <slot>text_grp_chat()</slot>
+  <slot>emoji_init()</slot>
+  <slot>push_but10()</slot>
+  <slot>push_but9()</slot>
+  <slot>push_but8()</slot>
+  <slot>push_but7()</slot>
+  <slot>push_but6()</slot>
+  <slot>push_but5()</slot>
+  <slot>push_but4()</slot>
+  <slot>push_but3()</slot>
+  <slot>sendPicture()</slot>
+  <slot>srch_text_chat()</slot>
+  <slot>srch_show_info()</slot>
+  <slot>font_change()</slot>
+ </slots>
+</ui>

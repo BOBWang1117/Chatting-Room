@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>381</width>
+    <height>312</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="but1">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>130</y>
+     <width>101</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 15px;
+border: 2px solid rgb(111, 156, 207);
+border-radius: 4px;
+margin-top: 10px;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="but2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="but3">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>30</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="but6">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>150</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="but4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="but5">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>150</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>260</y>
+     <width>81</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Confirm</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>but1</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>choose()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>83</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>12</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>but2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>choose()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>138</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>but3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>choose()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>286</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>247</x>
+     <y>58</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>but4</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>choose()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>97</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>but5</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>choose()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>but6</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>choose()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>307</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>choose()</slot>
+  <slot>confirm()</slot>
+ </slots>
+</ui>

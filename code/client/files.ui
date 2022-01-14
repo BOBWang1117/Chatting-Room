@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>files</class>
+ <widget class="QWidget" name="files">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QListWidget" name="filesList">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>541</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">height:20px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Current position: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="currentPos">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>20</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>370</y>
+     <width>371</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="handleWidth">
+    <number>170</number>
+   </property>
+   <widget class="QPushButton" name="uploadButton">
+    <property name="text">
+     <string>Upload</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="uploadButton_2">
+    <property name="text">
+     <string>Download</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>uploadButton</sender>
+   <signal>clicked()</signal>
+   <receiver>files</receiver>
+   <slot>uploadFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>387</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>75</x>
+     <y>377</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>uploadButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>files</receiver>
+   <slot>downloadFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>442</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>488</x>
+     <y>375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>filesList</sender>
+   <signal>itemDoubleClicked(QListWidgetItem*)</signal>
+   <receiver>files</receiver>
+   <slot>itemDblClk()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>uploadFile()</slot>
+  <slot>downloadFile()</slot>
+  <slot>itemDblClk()</slot>
+ </slots>
+</ui>
